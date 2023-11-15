@@ -2,7 +2,7 @@
   "name": "orangecat",
   "version": "1.0.0",
   "description": "A helper bot for the lolcats security group",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
