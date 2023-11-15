@@ -1,0 +1,7 @@
+# config files
+config.json
+yarn.lock
+
+# data files
+node_modules/
+
