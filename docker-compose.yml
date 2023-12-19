@@ -1,0 +1,8 @@
+services:
+  orangecat:
+    build:
+    # build from Dockerfile
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+     - ./config.json:/home/node/app/config.json

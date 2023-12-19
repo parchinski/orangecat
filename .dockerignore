@@ -1,0 +1,6 @@
+config.json
+yarn.lock
+pnpm-lock.yaml
+
+# data files
+node_modules/
