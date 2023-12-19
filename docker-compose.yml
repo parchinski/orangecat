@@ -1,8 +1,14 @@
 services:
   orangecat:
+    pull_policy: build
     build:
     # build from Dockerfile
       context: ./
       dockerfile: Dockerfile
-    volumes:
-     - ./config.json:/home/node/app/config.json
+    # uncomment to use config.json
+    #volumes:
+    # - ./config.json:/home/node/app/config.json
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      GUILD_ID: ${GUILD_ID}
+      CLIENT_ID: ${CLIENT_ID}
