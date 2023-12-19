@@ -3,9 +3,15 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 
-// Local Imports
-const { token } = require("./config.json");
-
+// Check if config.json exists
+if (fs.existsSync('./config.json')) {
+  // Read config from config.json
+  const config = require('./config.json');
+  token = config.token;
+} else {
+  // Read config from environment variables
+  token = process.env.DISCORD_TOKEN; 
+}
 // create a client
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 

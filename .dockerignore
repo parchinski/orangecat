@@ -1,6 +1,11 @@
 config.json
 yarn.lock
 pnpm-lock.yaml
-
+.eslint.json
+.gitignore
+.config.json.example
+README.md
+Dockerfile
+docker-compose.yml
 # data files
 node_modules/
